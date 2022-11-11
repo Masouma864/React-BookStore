@@ -9,7 +9,6 @@ const AddBook = (props) => {
             <div className='line'></div>
             <label className='title'>ADD NEW BOOK</label>
             <form className='form'>
-                
                 <input className='input' value={title} type='text' placeholder='Book title' />
                 <input className='input2' value={author} type='text' placeholder='Category' />
                 <button id={id} type='submit' className='submitBtn'>ADD BOOK</button>
@@ -18,4 +17,3 @@ const AddBook = (props) => {
     )
 }
 export default AddBook;
-console.log('hi')
