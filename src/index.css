@@ -16,13 +16,12 @@ body {
   background-color: #fafafa;
 }
 
-
 h1 {
   background-color: transparent;
   width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 2.2rem;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -31,7 +30,8 @@ h1 {
   letter-spacing: normal;
   color: #0290ff;
 }
-.container{
+
+.container {
   padding-bottom: 10px;
 }
 
@@ -43,7 +43,6 @@ h1 {
 .bookCard {
   list-style-type: none;
   margin: 0;
- 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,20 +60,21 @@ h1 {
 
 .book {
   background-color: transparent;
-  font-family: RobotoSlab;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   margin-top: 0.188rem;
   font-size: 1.375rem;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
 }
 
 .book-author {
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
+  font-family: "Roboto Slab", serif;
   background-color: transparent;
 }
 
@@ -82,7 +82,6 @@ h1 {
 .nav_bar {
   padding: 24px 4%;
   background-color: #fff;
-
   border-bottom: 1px solid #e8e8e8;
   display: flex;
   align-items: center;
@@ -129,7 +128,7 @@ nav {
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
   background-color: transparent;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -149,12 +148,11 @@ nav {
   background-color: transparent;
   border: none;
   color: #4386bf;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 300;
   cursor: pointer;
   border-right: 2px solid #e8e8e8;
   align-items: center;
-
   margin-top: 1.313rem;
 }
 
@@ -165,8 +163,7 @@ nav {
 .title {
   width: 10.875rem;
   height: 1.5rem;
-  
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   font-size: 1.25rem;
   font-weight: bold;
@@ -177,7 +174,8 @@ nav {
   color: #888;
 }
 
-.input2 , .input {
+.input2,
+.input {
   width: 25.813rem;
   height: 2.813rem;
   margin: 1.188rem 2.125rem 0;
@@ -185,7 +183,6 @@ nav {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
-
 }
 
 .submitBtn {
