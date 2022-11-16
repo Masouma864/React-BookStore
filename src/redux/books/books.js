@@ -1,49 +1,39 @@
+// Actions
+const ADD_BOOK = 'bookstore-app/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore-app/books/REMOVE_BOOK';
+
 const initialState = [
   {
-    title: 'The Hunger Game',
-    author: 'Suzanne Collins',
     id: 1,
+    title: '100 WAYS TO BE MONEY WISER',
+    author: 'Tilda Nabbanja',
   },
   {
-    title: 'Dune',
-    author: 'Frank Herber',
     id: 2,
+    title: 'BACK HOUSE',
+    author: 'Butamanya George',
   },
-  {
-    title:
-      'Capital in the Twenty-First Century',
-    author: 'Suzanne Collins',
-    id: 3,
-  },
-
 ];
-// Actions
-const ADD_BOOK = 'React-BookStore/books/ADD_BOOK';
-const REMOVE_BOOK = 'React-BookStore/books/REMOVE_BOOK';
 
-// Reducer
-const addremoveReducer = (state = initialState, action) => {
+export const addBook = (book) => ({
+  type: ADD_BOOK,
+  payload: book,
+});
+
+export const removeBook = (index) => ({
+  type: REMOVE_BOOK,
+  payload: index,
+});
+
+const reduceBook = (state = initialState, action) => {
   switch (action.type) {
-    // do reducer stuff
-    case ADD_BOOK: {
+    case ADD_BOOK:
       return [...state, action.payload];
-    }
-    case REMOVE_BOOK: {
-      return state.filter((book) => book.id !== action.payload);
-    }
+    case REMOVE_BOOK:
+      return [...state.filter((item) => item.id !== action.payload)];
     default:
       return state;
   }
 };
-// Action Creators
-export const addBook = (book) => ({
-  type: ADD_BOOK,
-  payload:book,
-});
 
-export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  payload: id,
-});
-
-export default addremoveReducer;
+export default reduceBook;

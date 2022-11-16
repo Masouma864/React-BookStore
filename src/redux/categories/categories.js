@@ -1,26 +1,20 @@
+// Actions
+const CHECK_STATUS = 'bookstore-app/categories/CHECK_STATUS';
 const initialState = [];
 
-// Action_type
-
-const STATUS_CHECKED = 'bookstore/cateogories/STATUS_CHECKED';
 export const checkStatus = () => ({
-  type: STATUS_CHECKED,
+  type: CHECK_STATUS,
 });
 
 // Reducer
-
-
-export default function categoriesReducer(state = initialState, action) {
+const reduceCategories = (state = initialState, action) => {
   switch (action.type) {
-    case STATUS_CHECKED:
-      return 'UNDER_CONSTRUCTION';
+    // do reducer stuff
+    case CHECK_STATUS:
+      return 'Under Construction';
     default:
       return state;
   }
-}
-// Action Creators for  actions
-export function checkStatus() {
-  return {
-    type: STATUS_CHECKED,
-  };
-}
+};
+
+export default reduceCategories;
