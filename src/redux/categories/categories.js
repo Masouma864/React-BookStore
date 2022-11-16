@@ -3,7 +3,12 @@ const initialState = [];
 // Action_type
 
 const STATUS_CHECKED = 'bookstore/cateogories/STATUS_CHECKED';
+export const checkStatus = () => ({
+  type: STATUS_CHECKED,
+});
+
 // Reducer
+
 
 export default function categoriesReducer(state = initialState, action) {
   switch (action.type) {
