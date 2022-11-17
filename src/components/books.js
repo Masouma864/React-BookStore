@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import React from 'react';
 import Book from './book';
 import AddBook from './addBook';
@@ -18,8 +18,8 @@ function Books(props) {
   );
 }
 
-Books.defaultProps = {
-  books: [],
+Books.propTypes = {
+  bookList: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default Books;
