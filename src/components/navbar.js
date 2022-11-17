@@ -1,4 +1,4 @@
-/* eslint-disable import/extensions */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
