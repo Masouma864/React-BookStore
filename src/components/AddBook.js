@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 function AddBook() {
-  const bookList = useSelector((state) => state);
   const dispatch = useDispatch();
   const [state, setState] = useState({
     title: '',
@@ -22,18 +21,12 @@ function AddBook() {
     e.preventDefault();
 
     if (state.title && state.author) {
-      let totID = 0;
-      for (let i = 0; i < bookList.books.length; i += 1) {
-        if (bookList.books[i].id > totID) {
-          totID = bookList.books[i].id;
-        }
-      }
-
       dispatch(
         addBook({
-          id: totID + 1,
+          item_id: Math.floor(Math.random() * 100),
           title: state.title,
           author: state.author,
+          category: 'Action',
         }),
       );
       setState({
