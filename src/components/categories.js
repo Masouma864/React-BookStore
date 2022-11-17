@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { checkStatus } from '../redux/categories/categories';
