@@ -7,8 +7,12 @@ function Navbar() {
       <nav>
         <h1>Bookstore CMS</h1>
         <ul>
-          <Link key="1" to="/b">Books</Link>
-          <Link key="2" to="/Categories">Categories</Link>
+          <li>
+            <Link to="/Book">Book</Link>
+          </li>
+          <li>
+            <Link to="/Categories">Categories</Link>
+          </li>
         </ul>
       </nav>
     </div>
