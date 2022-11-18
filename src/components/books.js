@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Book from './book';
-import AddBook from './addBook';
+import AddBook from './AddBook';
 
 function Books(props) {
   const { bookList } = props;
