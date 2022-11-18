@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './index.css';
 import Books from './components/books';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import Categories from './components/categories';
 import { getBooks } from './redux/books/books';
 
