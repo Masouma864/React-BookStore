@@ -1,7 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+}
+
 body {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  background-color: rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+  opacity: 0.5;
+}
+
+header {
   display: flex;
-  background-color: #fff;
-  justify-content: center;
   align-items: center;
-  height: 50vh;
+  margin-bottom: 2.5rem;
+  position: relative;
+  background-color: #ffff;
+  width: 87.5rem;
+  height: 5.938rem;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 5rem;
+}
+
+.user-container {
+  position: absolute;
+  cursor: pointer;
+  right: 17%;
+  font-size: 1rem;
+  color: #0290ff;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+header h1 {
+  font-weight: bold;
+  color: #0290ff;
+  font-size: 1.875rem;
+}
+
+header nav {
+  display: flex;
+  align-self: center;
+  margin-right: 5rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 2.5rem;
+  letter-spacing: 1.9px;
+  font-size: 0.813rem;
+}
+
+.links-container ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.links-container ul li {
+  margin-right: 1rem;
+}
+
+.book-list {
+  position: absolute;
+  width: 90%;
+  padding: 0 5rem;
+}
+
+a.active {
+  opacity: 1;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e8e8e8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.book-title {
+  font-family: 'Roboto slab', sans-serif;
+  font-weight: bold;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-author {
+  color: #4386bf;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.add-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  gap: 1rem;
+  margin-bottom: 16.5rem;
+}
+
+input[type='text'] {
+  width: 41.5rem;
+  height: 2.813rem;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+::placeholder {
+  font-size: 1rem;
+  padding-left: 1rem;
+  letter-spacing: -0.15px;
+}
+
+select {
+  width: 17.813rem;
+  height: 2.813rem;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  color: #c4c4c4;
+  letter-spacing: -0.15px;
+}
+
+option {
+  color: #121212;
+  letter-spacing: -0.15px;
+}
+
+button[type='submit'] {
+  width: 8.938rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-1 {
+  border: none;
+  background: none;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.progress {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  padding-right: 10rem;
+  margin-right: -25rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.progressBar {
+  height: 50px;
+}
+
+.numerics {
+  display: flex;
+  flex-flow: column;
+}
+
+.number {
+  font-size: 2rem;
+  margin: 5px 1rem;
+}
+
+.completed {
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.line {
+  border-right: 1px solid #e8e8e8;
+}
+
+.view-progress {
+  margin-right: 8rem;
+}
+
+.chapter-title {
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+  margin: 2rem 0;
+}
+
+.chapter-number {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.btn-2 {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  background-color: #aeb6bf;
+  margin: auto;
+  width: 97%;
+}
+
+.form-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
 }

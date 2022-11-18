@@ -10,7 +10,7 @@ function Books(props) {
       {bookList.map((book) => (
         <Book key={book.item_id} title={book.title} author={book.author} id={book.item_id} />
       ))}
-
+      <hr />
       <AddBook />
 
     </div>
