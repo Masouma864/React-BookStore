@@ -24,7 +24,7 @@ It is single page application for using mathimatical functions and displaying qu
 
 ## Live Demo
 
-[Live link](not available)
+[Live link](https://willowy-semifreddo-491844.netlify.app/Book)
 
 ## Getting Started
 
