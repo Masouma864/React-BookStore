@@ -1,5 +1,5 @@
 # bookstore-react
-It is single page application for using mathimatical functions and displaying quotations related to it, it's designed with react.
+This is an app created with React and Redux that enables you to showcase a catalog of books that you have added, add new titles to the list, and delete existing ones. It's essentially a virtual bookstore where you can manage your collection of books.
 
 ## Built With
 
