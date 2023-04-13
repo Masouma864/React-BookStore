@@ -39,7 +39,7 @@ View the file through the source code.
 👤 **Masouma Modarresi**
 
 - GitHub: [@masouma-modarresi](https://github.com/masouma864)
-- LinkedIn: [@masouma-modarresi](https://www.linkedin.com/in/masouma-modarresi/)/)
+- LinkedIn: [@masouma-modarresi](https://www.linkedin.com/in/masouma-modarresi/)
 
 
 ## 🤝 Contributing
