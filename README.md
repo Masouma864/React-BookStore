@@ -24,7 +24,7 @@ This is an app created with React and Redux that enables you to showcase a catal
 
 ## Live Demo
 
-[Live link](https://willowy-semifreddo-491844.netlify.app/Book)
+[Live link](https://nimble-sherbet-ce8220.netlify.app/)
 
 ## Getting Started
 
